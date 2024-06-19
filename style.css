@@ -1,0 +1,169 @@
+
+  #buttons {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    margin-left: 420px;
+    align-items: center; 
+    height: 60vh; 
+    margin-bottom:240px;
+  }
+  
+  #buttons button {
+    width: 100px; 
+    height: 100px; 
+    margin: 0 5px; 
+    border:none;
+    font-size:35px;
+  }
+
+  [id^="_pointer"] {
+    width:73px;
+    position:absolute;
+    transform: translateY(+60%);
+    font-size:40px;
+
+  }
+
+  [id^="__pointer"] {
+    width:73px;
+    position:absolute;
+    transform: translateY(+60%);
+    font-size:40px;
+
+  }
+
+#buttons button {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size:35px;
+  font-style: "Courier New";
+}
+
+#buttons button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#buttons button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+ 
+#Menu{
+    display: flex;
+    display: flex;
+    justify-content: right; 
+    align-items: center; 
+    height: 5vh; 
+    margin-top:-180px;
+    margin-right:180px;
+}
+
+#linktoarray, #linktoarray:link, #linktoarray:visited, #linktoarray:hover, #linktoarray:active {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  transform: translate(-50%, -200%);
+  background-color: transparent;
+  color: black; /* Ensures text is always black */
+  font-size: 30px; 
+  font-family: 'Courier New', monospace;
+  text-decoration: none; /* Removes underline */
+  border: none;
+  cursor: pointer;
+}
+#title{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: black; /* Ensures text is always black */
+  font-size: 40px; 
+  font-family: 'Courier New', monospace;
+  text-decoration: none; /* Removes underline */
+  border: none;
+  cursor: pointer;
+}
+
+#listcreate,#additem,#deletearray,#j,#i,#swappointers,#swapvalues,#back,#deleteelement,#array{
+  align-items: left;
+  color:black;
+  background-color:white;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+  
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+
+#back{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(250%, -50%);
+  background-color: transparent;
+  color: black; /* Ensures text is always black */
+  font-size: 20px; 
+  font-family: 'Courier New', monospace;
+  text-decoration: none; /* Removes underline */
+  border: none;
+  cursor: pointer;
+}
+
+
+
+#listcreate:hover,#additem:hover,#deletearray:hover,#j:hover,#i:hover,#swapvalues:hover,#swappointers:hover,#array:hover{
+  transform: translateY(-3px);
+}
+
+
+
+
+
+  
