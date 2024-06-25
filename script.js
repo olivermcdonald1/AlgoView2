@@ -194,16 +194,7 @@ document.getElementById("buttons").addEventListener("click", function(event) {
 
 
 
-document.getElementById("deletearray").addEventListener("click", function(event) {
-    if (event.target && event.target.nodeName === "BUTTON" && array_created==true) {
-        deleteArray(arr);
-        array_created = false;
-        arrSize = 0
-        
-        num = arr.length-1
-       
-    }
-});
+
 
 
 function createArray(arr){

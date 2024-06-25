@@ -2,19 +2,19 @@
 
 .CodeMirror {
   font-family: monospace;
-  height: 800px; /* Adjust height as needed */
-  width: 400px; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
+  width: 300px; /* Adjust width as needed */
   color: black;
-  direction: ltr;
-  position: fixed;
+
+  
   top: -600px; /* Adjust top position */
-  left: 0px; /* Adjust left position */
+  left: 20px; /* Adjust left position */
   background-color: bl,ack; /* Background color */
   border: 1px solid black; /* Border */
   border-radius: 5px; /* Border radius */
   padding: 10px; /* Padding */
   
-  z-index: 1000; /* Ensure it's above other elements */
+ 
 }
 
 

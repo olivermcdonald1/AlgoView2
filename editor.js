@@ -1,33 +1,29 @@
-let arr = []
-        document.addEventListener('DOMContentLoaded', function () {
-            const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-                lineNumbers: true,  
-                mode: 'javascript'  
-            });
-            
-            
-            editor.setValue(JSON.stringify(arr));
 
-            
-            function updateArray() {
-                try {
-                    const updatedArr = JSON.parse(editor.getValue());
-                    if (Array.isArray(updatedArr)) {
-                        
-                        arr = updatedArr;
-                    
-                        deleteArray()
-                        createArray(arr)
-                        array_created = true
-                    } else {
-                        throw new Error('Input is not a valid array');
-                    }
-                } catch (error) {
-                    console.error('Invalid JSON:', error);
-                }
-                return arr
-            }
+document.addEventListener('DOMContentLoaded', function () {
+    const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+      mode: 'javascript', // Set mode to JavaScript
+      
+      lineNumbers: true, // Show line numbers
+      autofocus: true // Automatically focus on editor
+    });
+  
+    // Set initial content of the editor (optional)
+    editor.setValue('')
+    // Function to run the code when the "Run" button is clicked
+    document.getElementById('array').addEventListener('click', function () {
+      // Clear console or output area (if any)
+  
+      try {
+        // Execute the code in the editor
 
-            
-            document.getElementById('array').addEventListener('click', updateArray);
-        });
+        eval(editor.getValue()); // Example: Assuming the function modifies variables in yourscript.js
+        deleteArray()
+        createArray(arr)
+      } catch (e) {
+        console.error('Error executing code:', e);
+      }
+    
+    });
+    
+  });
+  

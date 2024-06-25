@@ -3,10 +3,10 @@
     display: flex;
     display: flex;
     justify-content: center;
-    margin-left: 420px;
+    margin-left: 400px;
     align-items: center; 
     height: 60vh; 
-    margin-bottom:240px;
+    margin-bottom:250px;
   }
   
   #buttons button {
@@ -82,13 +82,13 @@
     align-items: center; 
     height: 5vh; 
     margin-top:-180px;
-    margin-right:180px;
+    margin-right:320px;
 }
 
 #linktoarray, #linktoarray:link, #linktoarray:visited, #linktoarray:hover, #linktoarray:active {
   position: absolute;
-  top: 20%;
-  left: 100%;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -200%);
   background-color: transparent;
   color: black; /* Ensures text is always black */
